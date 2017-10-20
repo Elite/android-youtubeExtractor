@@ -23,11 +23,9 @@ jobs:
       
     ## Customize dependencies
     dependencies:
- 
-
-  override:
-    - sudo ./gradlew dependencies
-    - sudo ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
+      override:
+        - sudo ./gradlew dependencies
+        - sudo ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
     
     steps:
       - checkout
